@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="107" id="VA8-cB-ocd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CellMateria" rowHeight="107" id="VA8-cB-ocd" customClass="CeldaMateria" customModule="NavegacionTableView" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="107"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VA8-cB-ocd" id="7dC-nr-Dxm">
@@ -39,10 +39,15 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="lblNombre" destination="TQO-g5-V7a" id="nRf-Cf-3A4"/>
                                             <segue destination="cY7-X1-shH" kind="show" id="s21-so-LSv"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="6JH-vi-PCe"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mDt-fE-kAe"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -140,7 +145,6 @@
         <!--Navigation Controller-->
         <scene sceneID="sPm-7s-qGW">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QYi-EU-Bpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="Ymx-ic-Jlc" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KZ3-LY-r5P">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -150,6 +154,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="24z-Nh-9tN"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QYi-EU-Bpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-422" y="423"/>
         </scene>

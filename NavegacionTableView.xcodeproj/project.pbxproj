@@ -14,6 +14,8 @@
 		3D2428FF21529CE30039EBF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2428FD21529CE30039EBF6 /* LaunchScreen.storyboard */; };
 		3D24290A21529CE30039EBF6 /* NavegacionTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24290921529CE30039EBF6 /* NavegacionTableViewTests.swift */; };
 		3D24291521529CE30039EBF6 /* NavegacionTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24291421529CE30039EBF6 /* NavegacionTableViewUITests.swift */; };
+		3D2429262152A6460039EBF6 /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2429252152A6460039EBF6 /* Materia.swift */; };
+		3D2429282152AC6A0039EBF6 /* CeldaMateria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2429272152AC6A0039EBF6 /* CeldaMateria.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3D24291021529CE30039EBF6 /* NavegacionTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavegacionTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D24291421529CE30039EBF6 /* NavegacionTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavegacionTableViewUITests.swift; sourceTree = "<group>"; };
 		3D24291621529CE30039EBF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D2429252152A6460039EBF6 /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
+		3D2429272152AC6A0039EBF6 /* CeldaMateria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMateria.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +101,11 @@
 		3D2428F321529CDE0039EBF6 /* NavegacionTableView */ = {
 			isa = PBXGroup;
 			children = (
+				3D2429242152A4DB0039EBF6 /* ViewControllers */,
+				3D2429232152A4D10039EBF6 /* Views */,
+				3D2429222152A4B30039EBF6 /* Models */,
 				3D2428F421529CDE0039EBF6 /* AppDelegate.swift */,
-				3D2428F621529CDE0039EBF6 /* ViewController.swift */,
-				3D2428F821529CDE0039EBF6 /* Main.storyboard */,
 				3D2428FB21529CE30039EBF6 /* Assets.xcassets */,
-				3D2428FD21529CE30039EBF6 /* LaunchScreen.storyboard */,
 				3D24290021529CE30039EBF6 /* Info.plist */,
 			);
 			path = NavegacionTableView;
@@ -123,6 +127,32 @@
 				3D24291621529CE30039EBF6 /* Info.plist */,
 			);
 			path = NavegacionTableViewUITests;
+			sourceTree = "<group>";
+		};
+		3D2429222152A4B30039EBF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D2429232152A4D10039EBF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D2428F821529CDE0039EBF6 /* Main.storyboard */,
+				3D2428FD21529CE30039EBF6 /* LaunchScreen.storyboard */,
+				3D2429252152A6460039EBF6 /* Materia.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D2429242152A4DB0039EBF6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D2428F621529CDE0039EBF6 /* ViewController.swift */,
+				3D2429272152AC6A0039EBF6 /* CeldaMateria.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D2428F721529CDE0039EBF6 /* ViewController.swift in Sources */,
+				3D2429282152AC6A0039EBF6 /* CeldaMateria.swift in Sources */,
 				3D2428F521529CDE0039EBF6 /* AppDelegate.swift in Sources */,
+				3D2429262152A6460039EBF6 /* Materia.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
